@@ -7,7 +7,6 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 
-@Parcelize
 @Entity(tableName = "news_todo")
 data class ResponseModel(
 
@@ -23,5 +22,4 @@ data class ResponseModel(
     @SerializedName("articles")
      var articles:List<Article>?
 
-
-):Parcelable
+)
